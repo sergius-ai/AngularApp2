@@ -1,0 +1,11 @@
+<div class="jp-playlist w3layouts_either">
+  <ul style="display: block;">
+    <div *ngFor="let song of list; index as i" (click)="play(i)">
+      <li class="{{styleClass}}" *ngIf="this.song.title && this.song">
+        <a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a>
+        <a href="javascript:;" class="jp-playlist-item {{styleClass}}">{{song.title}}</a>
+      </li>
+
+    </div>
+  </ul>
+</div>

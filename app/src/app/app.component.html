@@ -1,0 +1,20 @@
+<div class="audio-main">
+  <app-header
+    [title]="headerText"
+  ></app-header>
+	<div class="audio-record-list w3layouts_audio">
+		<div class="w3_figure w3ls_fig">
+			<img src="/assets/images/2.jpg" alt=" " class="img-responsive" />
+		</div>
+		<div id="jquery_jplayer_2" class="jp-jplayer w3l_play"></div>
+		<div id="jp_container_2" class="jp-audio agileits_audio" role="application" aria-label="media player">
+			<div class="jp-type-playlist agileinfo_playlist">
+        <app-media-player></app-media-player>
+        <app-play-list [list]="playlist"></app-play-list>
+			</div>
+      <app-social-networks [social]="socialObj"></app-social-networks>
+		</div>
+	</div>
+  <app-footer
+    [copyRight]="footerText"
+  ><app-footer>
